@@ -1,8 +1,11 @@
 !!!
 %head
-  =stylesheet_link_tag yield_content(:stylesheet)
+  -if yield_content(:stylesheet)
+    =stylesheet_link_tag yield_content(:stylesheet)
   =javascript_include_tag :jquery
-  =javascript_include_tag yield_content(:js)
+  -if yield_content(:js)
+    =javascript_include_tag yield_content(:js)
+  %title= yield_content(:exercise_name)
 %body
   %header
     %h1=yield_content(:exercise_name)
