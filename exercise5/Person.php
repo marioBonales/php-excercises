@@ -5,10 +5,12 @@ class Person{
     }
 
     public function printPersonalInfo(){
+        echo "Name: {$this->name} - Age: {$this->age}";
     }
 
-    public function setPersonalInfo(){
-
+    public function setPersonalInfo($name,$age){
+        $this->name = $name;
+        $this->age = $age;
     }
 
 }
