@@ -1,0 +1,24 @@
+.main{
+  height: 600px;
+  .moving-box{
+    div{
+      padding: 30%;
+      text-align: center;
+    }
+    width: 500px;
+    height: 500px;
+    color: white;
+    background-color: red;
+    -moz-transition: width 2s, height 2s, background-color 2s,margin 2s;
+    -webkit-transition: width 2s, height 2s, background-color 2s,margin 2s;
+    transition: width 2s, height 2s, background-color 2s,margin 2s;
+    &:hover{
+      width: 250px;
+      height: 250px;
+      background-color: blue;
+      margin: 0 50px;
+
+    }
+  }
+}
+

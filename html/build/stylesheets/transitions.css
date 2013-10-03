@@ -1,0 +1,22 @@
+/* line 1, /home/mario/exercises/html/source/stylesheets/transitions.css.scss */
+.main {
+  height: 600px; }
+  /* line 3, /home/mario/exercises/html/source/stylesheets/transitions.css.scss */
+  .main .moving-box {
+    width: 500px;
+    height: 500px;
+    color: white;
+    background-color: red;
+    -moz-transition: width 2s, height 2s, background-color 2s,margin 2s;
+    -webkit-transition: width 2s, height 2s, background-color 2s,margin 2s;
+    transition: width 2s, height 2s, background-color 2s,margin 2s; }
+    /* line 4, /home/mario/exercises/html/source/stylesheets/transitions.css.scss */
+    .main .moving-box div {
+      padding: 30%;
+      text-align: center; }
+    /* line 15, /home/mario/exercises/html/source/stylesheets/transitions.css.scss */
+    .main .moving-box:hover {
+      width: 250px;
+      height: 250px;
+      background-color: blue;
+      margin: 0 50px; }

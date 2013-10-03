@@ -1,0 +1,31 @@
+header{
+  h1{
+    text-align:center;
+  }
+}
+footer{
+  margin: 10px 0;
+}
+.main{
+  overflow: hidden;
+  article,aside{
+    section.paragraph{
+      padding:5px 10px;
+    }
+    width: 33%;
+    float: left;
+    height:100%;
+  }
+  article.article-1{
+    background-color: #0f048c;
+    color:white;
+  }
+  article.article-2{
+    background-color: #04818c;
+    color:white;
+  }
+  aside{
+    background-color: #043d8c;
+    color:white;
+  }
+}

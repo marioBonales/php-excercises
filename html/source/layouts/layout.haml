@@ -1,0 +1,10 @@
+!!!
+%head
+  =stylesheet_link_tag yield_content(:stylesheet)
+%body
+  %header
+    %h1=yield_content(:exercise_name)
+  .main
+    =yield
+  %footer
+    %section.info By Mario Bonales

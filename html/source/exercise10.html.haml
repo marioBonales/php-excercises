@@ -1,0 +1,8 @@
+-content_for(:exercise_name,"Exercise 8")
+-content_for(:stylesheet,"style")
+-(1..2).each do |article_num|
+  %article{ class: "article-#{article_num}"}
+    -4.times do
+      %section.paragraph= lorem.paragraph
+%aside
+  %section.quote= " \" #{lorem.paragraph} \" "
