@@ -1,13 +1,18 @@
 <?php
-class Boss{
-    protected $salary;
+include ("Worker.php");
+class Boss extends Worker{
+    protected $salary, $profit;
     public function __construct($name,$salary){
+        $this->name = $name;
+        $this->salary = $salary;
     }
 
-    public function setProfit(){
+    public function setProfit($profit){
+        $this->profit = $profit;
     }
 
-    private function calcSalary(){
+    protected function calcSalary(){
+        return $this->salary + ( $this->profit * .1);
     }
 
 }
