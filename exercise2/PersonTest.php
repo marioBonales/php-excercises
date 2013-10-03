@@ -8,7 +8,7 @@ class PersonTest extends PHPUnit_Framework_TestCase{
     }
     public function testPersonCanSetAndOutputAge(){
         $this->person->setAge(AGE);
-        $this->expectOutputString(AGE);
+        $this->expectOutputString((string)AGE);
         $this->person->printAge();
     }
     public function testPersonCanSetAndOutputName(){
