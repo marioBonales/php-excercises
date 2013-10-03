@@ -1,0 +1,14 @@
+/* line 1, /home/mario/exercises/html/source/stylesheets/button.css.scss */
+button {
+  height: 50px;
+  border-color: #4ccbcc;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-radius: 5px;
+  color: white;
+  background: #499bea;
+  background: -moz-linear-gradient(top, #499bea 0%, #2966e8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #499bea), color-stop(100%, #2966e8));
+  background: -webkit-linear-gradient(top, #499bea 0%, #2966e8 100%);
+  background: -ms-linear-gradient(top, #499bea 0%, #2966e8 100%);
+  background: linear-gradient(to bottom, #499bea 0%, #2966e8 100%); }
