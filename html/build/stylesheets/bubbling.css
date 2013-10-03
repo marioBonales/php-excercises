@@ -1,0 +1,23 @@
+/* line 1, /home/mario/exercises/html/source/stylesheets/bubbling.css.scss */
+#parent {
+  background-color: black;
+  width: 600px;
+  height: 300px;
+  color: white;
+  border: 1px solid white; }
+  /* line 7, /home/mario/exercises/html/source/stylesheets/bubbling.css.scss */
+  #parent #children {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 250px;
+    margin: 20px auto;
+    border: 1px solid white; }
+    /* line 14, /home/mario/exercises/html/source/stylesheets/bubbling.css.scss */
+    #parent #children #grandchildren {
+      background-color: orange;
+      color: black;
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      border: 1px solid white; }

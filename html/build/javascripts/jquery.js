@@ -1,11 +1,3 @@
-$( function(){
-  $("#grandchildren,#children,#parent").click(
-      function(event){
-        $(this).css("background-color","red");
-        $("div",this).first().text("I, (or a children) was clicked");
-      }
-  );
-});
 /*! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery-1.10.2.min.map
 */

@@ -1,0 +1,23 @@
+#parent{
+  background-color: black;
+  width: 600px;
+  height: 300px;
+  color: white;
+  border: 1px solid white;
+  #children{
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 250px;
+    margin: 20px auto;
+    border: 1px solid white;
+    #grandchildren{
+      background-color: orange;
+      color:black;
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      border: 1px solid white;
+    }
+  }
+}
