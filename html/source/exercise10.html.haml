@@ -1,8 +1,10 @@
--content_for(:exercise_name,"Exercise 8")
--content_for(:stylesheet,"style")
--(1..2).each do |article_num|
-  %article{ class: "article-#{article_num}"}
-    -4.times do
-      %section.paragraph= lorem.paragraph
-%aside
-  %section.quote= " \" #{lorem.paragraph} \" "
+-content_for(:stylesheet,:bubbling)
+-content_for(:js,:bubbling)
+-content_for(:exercise_name,"Excercise 10")
+#parent
+  %div Parent (Click me!)
+  #children
+    %div Children (Click me!)
+    #grandchildren
+      %div Grandchildren
+      %div Click me!
