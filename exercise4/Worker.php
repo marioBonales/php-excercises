@@ -1,10 +1,10 @@
 <?
 abstract class Worker{
-    public $name, $salary;
+    protected $name, $salary;
 
-    public abstract function calcSalary();
+    protected abstract function calcSalary();
 
     public function printSalary(){
-        echo "Name: {$this->name} Salary: {$this->calcSalary()}";
+        echo "Name: {$this->name} - Salary: {$this->calcSalary()}";
     }
 }
