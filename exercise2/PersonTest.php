@@ -3,7 +3,7 @@ include("Person.php");
 define("AGE",24);
 define("NAME","Mario Bonales");
 class PersonTest extends PHPUnit_Framework_TestCase{
-    public function setUp(){
+    protected function setUp(){
         $this->person = new Person();
     }
     public function testPersonCanSetAndOutputAge(){
