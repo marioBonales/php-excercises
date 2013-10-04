@@ -1,0 +1,28 @@
+!!!
+%head
+  %title Exercise 6
+%body
+  %form{action: "/?page=update", method: :post}
+    <input type="hidden" name="id" value="<?= $data? $data->id :'' ?>">
+    .field
+      %label
+        Name:
+      <input name="name" value="<?= $data? $data->name :'' ?>">
+    .field
+      %label
+        Last Name:
+      <input name="last_name" value="<?= $data? $data->last_name :'' ?>">
+    .field
+      %label
+        Age:
+      <input name="age" value="<?= $data? $data->age :''?>">
+    .field
+      %label
+        Telephone:
+      <input name="telephone" value="<?= $data? $data->telephone :'' ?>">
+    .field
+      %label
+        Email:
+      <input name="email" value="<?= $data? $data->email :'' ?>">
+    .field
+      %input{type: :submit, value: "Save Person"}
