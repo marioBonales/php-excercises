@@ -1,8 +1,8 @@
 <?php
 class Car{
-    public $make="", $model="";
+    var $make="", $model="";
 
-    public function __construct($make,$model){
+    function __construct($make,$model){
         $this->make = $make;
         $this->model = $model;
     }
