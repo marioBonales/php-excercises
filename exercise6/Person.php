@@ -9,6 +9,9 @@ class Person {
         }else{
             $this->db = $db;
         }
+        if(isset($data['id'])){
+            $this->id = $data['id'];
+        }
         $this->name = $data['name'];
         $this->last_name = $data['last_name'];
         $this->age = $data['age'];

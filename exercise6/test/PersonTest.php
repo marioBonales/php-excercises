@@ -26,4 +26,11 @@ class PersonTest extends PHPUnit_Framework_TestCase{
         $this->assertNull(Person::fetch($id,$this->db));
     }
 
+    public function testPersonGetsIdInFetch(){
+        $this->person->save();
+        $id = $this->person->id;
+        $person = Person::fetch($id,$this->db);
+        $this->assertTrue($person->id != null);
+    }
+
 }
