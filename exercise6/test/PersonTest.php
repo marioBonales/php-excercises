@@ -33,4 +33,12 @@ class PersonTest extends PHPUnit_Framework_TestCase{
         $this->assertTrue($person->id != null);
     }
 
+    public function testPersonFetchAll(){
+        $this->person->save();
+        $persons = Person::fetchAll($this->db);
+        $this->assertTrue(is_array($persons));
+        $person = $persons[0];
+        $this->assertTrue($person instanceof Person);
+    }
+
 }

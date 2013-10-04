@@ -19,6 +19,19 @@ class Person {
         $this->telephone = $data['telephone'];
     }
 
+    public static function fetchAll($db=null){
+        if($db == null){
+            $db = new PDO('mysql:host=localhost;dbname=exercise;','exercise','exercise9');
+        }
+        $statement = $db->prepare("SELECT * FROM person");
+        $statement->execute();
+        $data_persons = $statement->fetchAll();
+        $persons = array();
+        foreach($data_persons as $person){
+            $persons[] = new Person($person);
+        }
+        return $persons;
+    }
     public static function fetch($id,$db=null){
         if($db == null){
             $db = new PDO('mysql:host=localhost;dbname=exercise;','exercise','exercise9');

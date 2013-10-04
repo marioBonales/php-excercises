@@ -13,6 +13,11 @@ class Controller{
         include("views/read.php");
     }
 
+    public function list_persons(){
+        $data = Person::fetchAll();
+        include("views/list.php");
+    }
+
     public function error(){
     }
 
