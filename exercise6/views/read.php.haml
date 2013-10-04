@@ -1,16 +1,14 @@
-!!!
-%head
-  %title Exercise 6
-%body
-  .field
-    Id: <?= $data->id ?>
-  .field
-    Name: <?= $data->name ?>
-  .field
-    Last Name: <?= $data->last_name ?>
-  .field
-    Age: <?= $data->age ?>
-  .field
-    Telephone: <?= $data->telephone ?>
-  .field
-    email: <?= $data->email ?>
+.field
+  Id: <?= $data->id ?>
+.field
+  Name: <?= $data->name ?>
+.field
+  Last Name: <?= $data->last_name ?>
+.field
+  Age: <?= $data->age ?>
+.field
+  Telephone: <?= $data->telephone ?>
+.field
+  email: <?= $data->email ?>
+<a href="/?page=edit&id=<?= $data->id?>">Edit</a>
+<a href="/?page=delete&id=<?= $data->id?>">Delete</a>
