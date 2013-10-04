@@ -58,4 +58,14 @@ SQL
             return $success;
     }
 
+    public function delete(){
+        if(!$this->id){
+            return;
+        }
+        $statement = $this->db->prepare("DELETE FROM person WHERE id = :id ");
+        $statement->bindParam(":id",$this->id);
+        $statement->execute();
+        $this->id = null;
+    }
+
 }

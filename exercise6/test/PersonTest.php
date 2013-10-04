@@ -19,4 +19,11 @@ class PersonTest extends PHPUnit_Framework_TestCase{
         $this->assertTrue(Person::fetch($this->person->id,$this->db) instanceof Person );
     }
 
+    public function testPersonCanBeDeleted(){
+        $this->person->save();
+        $id = $this->person->id;
+        $this->person->delete();
+        $this->assertNull(Person::fetch($id,$this->db));
+    }
+
 }
